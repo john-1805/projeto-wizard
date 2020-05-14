@@ -1,0 +1,84 @@
+<html>
+<head></head>
+<title>Cadastro de Notas </title>
+
+<body>
+
+<center><font face="arial">
+
+<h2> Cadastro de Notas </h2>
+
+<h4>Avaliação Mensal</h4>
+<form name="insert_notas" action="banco_wizard.php">
+<table border="1">
+<tr><td>
+<table border="0">
+<tr><td><input type="text" width="100" name="txtnomealuno" placeholder="Codigo do Aluno" required="required"></input></td><td>
+Periodo:<input type="text" name="txtperiodo" placeholder="MM/AAAA" required="required"></input>
+
+
+
+
+<td><select name="txtavoral" required="required">
+<option value="--">		Avaliação Oral
+				<option value="O">Ótimo
+				<option value="MB">Muito Bom
+                		<option value="B">Bom
+				<option value="R">Regular
+                		<option value="F">Fraco</td>
+
+<td><select name="txtavescrita" required="required">
+<option value="--">		Avaliação Escrita
+				<option value="O">Ótimo
+				<option value="MB">Muito Bom
+              			<option value="B">Bom
+				<option value="R">Regular
+                		<option value="F">Fraco</td>
+
+<td><select name="txtrevisao" required="required">
+<option value="--">		Revisão
+				<option value="O">Ótimo
+				<option value="MB">Muito Bom
+                		<option value="B">Bom
+				<option value="R">Regular
+                		<option value="F">Fraco</td>
+
+<td>Faltas:<input type="text" size="5" name="txtfaltas"  required="required" >
+</tr>
+                
+</table>
+</table>
+<br>
+<input type="submit" value="Enviar Notas">
+<input type="reset" value="Limpar Dados">
+</form>
+
+
+<form name="editar_notas" action="index3.html">
+<br>
+<input type="submit" value="Editar Notas">
+</form>
+
+
+<br>
+<form name="cadastro_aluno" action="insert_aluno.php">
+<h2> Cadastro de Alunos</h2>
+
+<br>
+<table border="1">
+<tr><td>
+<table border="0">
+<tr><td>Nome do Aluno:</td><td><input type="text" name="cad_nomealuno" required="required"></insert></td><td>
+<tr><td>Código de Aluno:</td><td><input type="text" name="cad_codaluno" required="required"></insert></td><td>
+                
+</table>
+</table>
+<br>
+<input type="submit" value="Cadastrar">
+<input type="reset" value="Limpar Dados">
+</form>
+
+</body>
+</html>
+
+	

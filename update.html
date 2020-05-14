@@ -1,0 +1,53 @@
+<html>
+<body>
+<font face="arial">
+<h2> Alterar Notas</h2>
+<form name="update_grades" action="editar.php">
+
+<table border="1">
+<tr><td>
+<table border="0">
+
+<tr><td><input type="text" width="100" name="txtnomealuno" placeholder="Codigo do Aluno" required="required"></input></td><td>
+
+Periodo:<input type="text" name="txtperiodo" placeholder="MMAAAA" required="required"></input>
+
+
+
+
+<td><select name="txtavoral" required="required">
+<option value="--">		Avaliação Oral
+				<option value="O">Ótimo
+				<option value="MB">Muito Bom
+                		<option value="B">Bom
+				<option value="R">Regular
+                		<option value="F">Fraco</td>
+
+<td><select name="txtavescrita" required="required">
+<option value="--">		Avaliação Escrita
+				<option value="O">Ótimo
+				<option value="MB">Muito Bom
+              			<option value="B">Bom
+				<option value="R">Regular
+                		<option value="F">Fraco</td>
+
+<td><select name="txtrevisao" required="required">
+<option value="--">		Revisão
+				<option value="O">Ótimo
+				<option value="MB">Muito Bom
+                		<option value="B">Bom
+				<option value="R">Regular
+                		<option value="F">Fraco</td>
+
+<td>Faltas:<input type="text" size="5" name="txtfaltas"  required="required" >
+</tr>
+                
+</table>
+</table>
+	<br>
+	
+	<input type="submit" value='Alterar'>
+	</form>
+</font>
+</body>
+<html>
